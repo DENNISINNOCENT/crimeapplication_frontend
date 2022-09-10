@@ -15,13 +15,16 @@ function handleDeleteCrime(deletedcrime) {
     const updatedCrimes = crimes.filter((crime) => crime.id !== deletedcrime.id);
     setCrimes(updatedCrimes);
   }
+  function handleUpdateItem(updatedItem) {
+    console.log( updatedItem);
+  }
  
   
   return (
     <div className='crime_list'>
       {crimes.map((crime)=>(
 
-      <Crimes key={crime.id} id ={crime.id} title ={crime.title} description ={crime.description} police_station={crime.police_station} updated_at ={crime.updated_at} deletedcrime={handleDeleteCrime}/>
+      <Crimes key={crime.id} id ={crime.id} title ={crime.title} description ={crime.description} police_station={crime.police_station} updated_at ={crime.updated_at} deletedcrime={handleDeleteCrime} onUpdate={handleUpdateItem}/>
 
       ))}
            

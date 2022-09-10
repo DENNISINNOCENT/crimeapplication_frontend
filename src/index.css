@@ -36,7 +36,7 @@ code {
 .crime_list {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .crime {
@@ -60,4 +60,33 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.crimeapp{
+  
+  font-size: 25px;
+   font-family: 'Times New Roman', Times, serif;
+    color:black;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.crimeapp input{
+    padding: 10px;
+    outline: none;
+    border-radius: 12px;
+    width: 25%;
+}
+.NewCrime{
+background-color: #fef68a;
+align-items: center;
+justify-content: center;
+}
+.crimeapp button{
+    width: 10%;
+    padding: 5px;
+    outline: none;
+    border-radius: 12px;
+}
+.crimeapp button a :hover {
+  color: red;
 }

@@ -14,12 +14,14 @@ function App() {
   return (
     
     <div className='App'> 
- 
+    <div>
      <CrimeList />
-     <ReportCrime/>
-     
      </div>
-     
+      <div>
+      <ReportCrime/>
+     </div>
+     </div>
+    
     
     
       

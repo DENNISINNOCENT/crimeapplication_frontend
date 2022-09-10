@@ -36,22 +36,29 @@ function handleChange(event){
   }
   console.log(crimeData)
   return (
-    <div>
+    <div className='crimeapp'>
         <form className='NewCrime'onSubmit={handleSubmit}>
+           <div>
             <label>CRIME _TYPE_TITLE</label>
+            </div>
             <input type="text" name='title' value={crimeData.title} onChange={handleChange}/>
            
-           
+            <div>
             <label>Location Area of the Crime</label>
+            </div>
             <input type="text" name='area'value={crimeData.area} onChange={handleChange}/>
+            <div>
             <label>Reporting Police Station</label>
+           
             <select name ="police_station_id" value={crimeData.police_station_id} onChange ={handleChange}>
               <option>1</option>
               <option>2</option>
 
             </select>
-            
-            <textarea type="text" name='description'value={crimeData.description} onChange={handleChange} placeholder="Description of the crime" rows="4"></textarea>
+            </div>
+            <div>
+            <textarea type="text" name='description'value={crimeData.description} onChange={handleChange} placeholder="Description of the crime" rows="5" ></textarea>
+             </div>
              <button type="submit">Add Crime</button>
         </form>
     </div>
